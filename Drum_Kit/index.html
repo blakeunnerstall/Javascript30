@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Drum kit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="all">
+        <div class="grid-container">
+            <button id="q" class="grid-item" onclick="q.play()">
+                <div class="letter">Q</div>
+            </button>
+            <button id="w" class="grid-item" onclick="w.play()">
+                <div class="letter">W</div>
+            </button>
+            <button id="e" class="grid-item" onclick="e.play()">
+                <div class="letter">E</div>
+            </button>
+            <div class="grid-item-screen">
+                <div class="letter">
+                    <div id="screen"></div>
+                </div>
+            </div>
+            <button id="a" class="grid-item" onclick="a.play()">
+                <div class="letter">A</div>
+            </button>
+            <button id="s" class="grid-item" onclick="s.play()">
+                <div class="letter">S</div>
+            </button>
+            <button id="d" class="grid-item" onclick="d.play()">
+                <div class="letter">D</div>
+            </button>
+            <div class="grid-item hidden">
+                <div class="letter">nothing</div>
+            </div>
+            <button id="z" class="grid-item" onclick="z.play()">
+                <div class="letter">Z</div>
+            </button>
+            <button id="x" class="grid-item" onclick="x1.play()">
+                <div class="letter">X</div>
+            </button>
+            <button id="c" class="grid-item" onclick="c.play()">
+                <div class="letter">C</div>
+            </button>
+            <div class="grid-item-volume">
+                <div class="letter">volume bar</div>
+            </div>
+        </div>
+</body>
+
+</html>

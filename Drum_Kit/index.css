@@ -1,0 +1,93 @@
+body, button {
+    font-family: 'Russo One', sans-serif;
+    font-size: 22px !important;
+}
+.grid-container {
+    height: 350px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 10% 10% 10% auto;
+    background-color: #2196F3;
+    border: 5px solid black;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    resize: both;
+    overflow: auto;
+}
+
+.grid-item {
+    display: grid;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    /*padding: 20px;*/
+   /* padding-top: 10%;
+    padding-bottom: 10%;*/
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-screen {
+    display: grid;
+    width: 50%;
+    margin-left: 25%;
+    border-radius: 5px;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    /*padding: 20px;*/
+   /* padding-top: 10%;
+    padding-bottom: 10%;*/
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-volume {
+    display: grid;
+    width: 80%;
+    margin-left: 10%;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    /*padding: 20px;*/
+   /* padding-top: 10%;
+    padding-bottom: 10%;*/
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item-key-pressed {
+    color: white;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid yellow;
+    transition: width 1s;
+    /*padding: 20px;*/
+   /* padding-top: 10%;
+    padding-bottom: 10%;*/
+    font-size: 30px;
+    text-align: center;
+    opacity: .8;
+}
+
+.test {
+    transition-property: background-color !important;
+    transition-duration: 1s !important;
+}
+
+.grid-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.hidden {
+    visibility: hidden;
+}
+
+.letter {
+    margin: auto;
+}
+
