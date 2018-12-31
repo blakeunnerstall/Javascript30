@@ -97,27 +97,14 @@ window.addEventListener('keydown', function (e) {
             document.getElementById(value).classList.add("grid-item-key-pressed");
 
             document.getElementById("screen").innerHTML = letterSrc[value]["name"];
-            //document.getElementById(x).classList.add("test");
 
-            /*let settingTime = setTimeout(function () {
-                document.getElementById(x).classList.remove("grid-item-key-pressed");
-                document.getElementById(x).classList.add("grid-item");
-            }, 100);*/
-
-            //clearInterval(setNewInterval);
 
         }
     }
 
-    /* let setNewInterval = setInterval(function () {
-         if (document.getElementById(letter).classList.contains("grid-item-key-pressed") == true) {
-             document.getElementById(letter).classList.remove("grid-item-key-pressed");
-             document.getElementById(letter).classList.add("grid-item");
-         }
-     }, 200);*/
 });
 
-//clearInterval(setNewInterval);
+
 
 window.addEventListener('keyup', function (e) {
     let letter = e.key;
@@ -130,6 +117,3 @@ window.addEventListener('keyup', function (e) {
 
 });
 
-// BUG NOTES/TO DO LIST:
-// 1. setTimeout only works on C key
-// 2. animation on keypress/click needs to be applied to click as well
