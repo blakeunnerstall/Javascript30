@@ -28,18 +28,6 @@ z.src = zSrc;
 x1.src = xSrc;
 c.src = cSrc;
 
-/*const letterSrc = {
-    q: qSrc,
-    w: wSrc,
-    e: eSrc,
-    a: aSrc,
-    s: sSrc,
-    d: dSrc,
-    z: zSrc,
-    x: xSrc,
-    c: cSrc
-}*/
-
 const letterSrc = {
     q: {
         source: qSrc,
@@ -79,8 +67,7 @@ const letterSrc = {
     }
 }
 
-//console.log(letterSrc2["q"]["name"]);
-
+// when a key from the drum machine is pressed down, we play the appropriate audio file as well as change the class
 window.addEventListener('keydown', function (e) {
     let letter = e.key;
     // looping through all letters on the drum machine to see if any were pressed
@@ -104,8 +91,7 @@ window.addEventListener('keydown', function (e) {
 
 });
 
-
-
+// when a key from the drum machine is released, we change the class back to its original
 window.addEventListener('keyup', function (e) {
     let letter = e.key;
     for (x in letterSrc) {
