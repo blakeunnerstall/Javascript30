@@ -1,0 +1,55 @@
+.clock {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: lightgray;
+    margin: 125px auto 0px auto;
+    position: relative;
+    border:20px solid black;
+}
+
+.clock-face{
+    border:20px solid lightgray;
+    border-radius: 50%;
+    position: relative;
+    width: 92%;
+    height: 92%;
+    transform: translateY(-3px); /* account for height of clock hands */
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top:50%;
+    transform-origin: 100%; /* where it will do the transformation off of, default is the middle of the line (50%) */
+    transform: rotate(90deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 1.67, 0.33, 1);
+}
+
+.hour-hand {
+    width: 35%;
+    height: 6px;
+    background: black;
+    margin-left: 69px;
+    position: absolute;
+    top:50%;
+    transform-origin: 100%; /* where it will do the transformation off of, default is the middle of the line (50%) */
+    transform: rotate(150deg);
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 1.67, 0.33, 1);
+}
+
+.second-hand {
+    height: 2px !important;
+    background: red !important;
+    transform: rotate(180deg);
+}
+
+#current-time {
+    font-size: 40px;
+    margin-top: 50px;
+    text-align: center;
+}
