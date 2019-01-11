@@ -1,3 +1,8 @@
+body{
+    background-image: url("white-waves.png");
+    background-repeat: repeat;
+}
+
 .clock {
     width: 500px;
     height: 500px;
@@ -17,7 +22,7 @@
     transform: translateY(-3px); /* account for height of clock hands */
 }
 
-.hand {
+.min-hand {
     width: 50%;
     height: 6px;
     background: black;
@@ -37,15 +42,23 @@
     position: absolute;
     top:50%;
     transform-origin: 100%; /* where it will do the transformation off of, default is the middle of the line (50%) */
-    transform: rotate(150deg);
+    transform: rotate(90deg);
     transition: all 0.5s;
     transition-timing-function: cubic-bezier(0, 1.67, 0.33, 1);
 }
 
 .second-hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top:50%;
+    transform-origin: 100%; /* where it will do the transformation off of, default is the middle of the line (50%)  */
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0, 1.67, 0.33, 1);
     height: 2px !important;
     background: red !important;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 #current-time {
